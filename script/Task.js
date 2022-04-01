@@ -1,12 +1,12 @@
 'use strict'
 
-let yearOfBirth = prompt('Введите ваш возраст');
+let yearOfBirth = prompt('Введите свой год рождения');
 
-if( isNaN(+yearOfBirth) || yearOfBirth === null || yearOfBirth.trim() === ''){
-    alert('Жаль что вы не ввели свой возраст');
-    yearOfBirth = 'Вы не ввели свой возраст';
+if( yearOfBirth.length < 4 || isNaN(+yearOfBirth) || yearOfBirth === null || yearOfBirth.trim() === ''){
+    alert('Жаль что вы не ввели свой рождения');
+    yearOfBirth = 'Вы не ввели год рождения';
 }else {
-    yearOfBirth = `Ваш возраст ${yearOfBirth}`;
+    yearOfBirth = `Ваш возраст ${Number(2022) - yearOfBirth}`;
 }
 
 
