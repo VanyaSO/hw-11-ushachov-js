@@ -2,7 +2,7 @@
 
 let yearOfBirth = prompt('Введите свой год рождения');
 
-if( yearOfBirth.length < 4 || isNaN(+yearOfBirth) || yearOfBirth === null || yearOfBirth.trim() === ''){
+if( yearOfBirth === null || yearOfBirth.length < 4 || isNaN(+yearOfBirth) || yearOfBirth.trim() === ''){
     alert('Жаль что вы не ввели свой рождения');
     yearOfBirth = 'Вы не ввели год рождения';
 }else {
@@ -64,4 +64,3 @@ switch (sport) {
 
 alert(` ${yearOfBirth} \n ${city} \n ${sport}`);
 
-location.reload();
